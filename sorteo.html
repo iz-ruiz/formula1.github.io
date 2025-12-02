@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Premio de Euskadi F1 - Bilbao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/LOGO-F1-GRUPO3.png" alt="Logo F1 Bilbao" class="logo" id="logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">La carrera</a>
+                        <ul class="submenu">
+                            <li><a href="#">Circuito</a></li>
+                            <li><a href="#">Escuderías</a></li>
+                            <li><a href="#">Horarios</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Bilbao</a>
+                        <ul class="submenu">
+                            <li><a href="#      ">Visitanos</a></li>
+                            <li><a href="#">Gastronomía</a></li>
+                            <li><a href="#">Alojamiento</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Entradas</a>
+                        <ul class="submenu">
+                            <li><a href="#">Fin semana</a></li>
+                            <li><a href="solocarrera.html">Solo Carrera</a></li>
+                            <li><a href="acceso.html">Acceso</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="sorteo.html" class="menu-link">Sorteo Tres primeros pilotos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contacto.html" class="menu-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="container-fluid">
+            <main class="main-contenido full-width">
+                <section class="sorteo-section">
+                    <h1 class="page-titulo">🏆 Sorteo Tres Primeros Pilotos</h1>
+                    
+                    <div class="sorteo-intro">
+                        <p>
+                            ¡Participa en nuestro sorteo y gana increíbles premios! Predice quiénes serán los 
+                            tres primeros pilotos en cruzar la meta en el Gran Premio de Euskadi.
+                        </p>
+                        <p>
+                            Selecciona tus tres pilotos favoritos en orden de llegada. Si aciertas alguna posición, 
+                            ¡podrás ganar fantásticos premios en efectivo!
+                        </p>
+                    </div>
+
+                    <div class="sorteo-form">
+                        <h2>Selecciona tus predicciones</h2>
+                        
+                        <div class="predicion-grid">
+                            <div class="prediccion-item">
+                                <label for="piloto1">🥇 Primer Puesto</label>
+                                <select id="piloto1" class="pilot-select">
+                                    <option value="">-- Selecciona un piloto --</option>
+                                    <option value="0">Max Verstappen</option>
+                                    <option value="1">Lewis Hamilton</option>
+                                    <option value="2">Charles Leclerc</option>
+                                    <option value="3">Sergio Pérez</option>
+                                    <option value="4">Carlos Sainz</option>
+                                    <option value="5">Lando Norris</option>
+                                    <option value="6">Fernando Alonso</option>
+                                    <option value="7">George Russell</option>
+                                    <option value="8">Oscar Piastri</option>
+                                    <option value="9">Pierre Gasly</option>
+                                </select>
+                            </div>
+
+                            <div class="prediccion-item">
+                                <label for="piloto2">🥈 Segundo Puesto</label>
+                                <select id="piloto2" class="pilot-select">
+                                    <option value="">-- Selecciona un piloto --</option>
+                                    <option value="0">Max Verstappen</option>
+                                    <option value="1">Lewis Hamilton</option>
+                                    <option value="2">Charles Leclerc</option>
+                                    <option value="3">Sergio Pérez</option>
+                                    <option value="4">Carlos Sainz</option>
+                                    <option value="5">Lando Norris</option>
+                                    <option value="6">Fernando Alonso</option>
+                                    <option value="7">George Russell</option>
+                                    <option value="8">Oscar Piastri</option>
+                                    <option value="9">Pierre Gasly</option>
+                                </select>
+                            </div>
+
+                            <div class="prediccion-item">
+                                <label for="piloto3">🥉 Tercer Puesto</label>
+                                <select id="piloto3" class="pilot-select">
+                                    <option value="">-- Selecciona un piloto --</option>
+                                    <option value="0">Max Verstappen</option>
+                                    <option value="1">Lewis Hamilton</option>
+                                    <option value="2">Charles Leclerc</option>
+                                    <option value="3">Sergio Pérez</option>
+                                    <option value="4">Carlos Sainz</option>
+                                    <option value="5">Lando Norris</option>
+                                    <option value="6">Fernando Alonso</option>
+                                    <option value="7">George Russell</option>
+                                    <option value="8">Oscar Piastri</option>
+                                    <option value="9">Pierre Gasly</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button onclick="comprobarSorteo()" class="btn-sorteo">Comprobar Sorteo</button>
+                    </div>
+
+                    <div id="resultadosSorteo" class="resultados-sorteo" style="display: none;">
+                        <h2>🎲 Resultados del Sorteo</h2>
+                        
+                        <div class="ganadores-grid" id="ganadoresGrid"></div>
+
+                        <div class="resultado-mensaje" id="resultadoMensaje"></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contenido">
+                <div class="footer-section">
+                    <p class="trademark">© 2025 Formula 1® | Ayuntamiento de Bilbao®</p>
+                </div>
+                <div class="footer-section">
+                    <a href="#">Política de Cookies</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                <div class="footer-section social-media">
+                    <a href="https://facebook.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Facebook_Logo_(2019).png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icono">
+                        <img src="imagenes/X_logo_2023.svg.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Instagram_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Youtube_logo.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="sorteo.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Premio de Euskadi F1 - Bilbao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/LOGO-F1-GRUPO3.png" alt="Logo F1 Bilbao" class="logo" id="logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">La carrera</a>
+                        <ul class="submenu">
+                            <li><a href="#">Circuito</a></li>
+                            <li><a href="#">Escuderías</a></li>
+                            <li><a href="#">Horarios</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Bilbao</a>
+                        <ul class="submenu">
+                            <li><a href="#">Visitanos</a></li>
+                            <li><a href="#">Gastronomía</a></li>
+                            <li><a href="#">Alojamiento</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Entradas</a>
+                        <ul class="submenu">
+                            <li><a href="#">Fin semana</a></li>
+                            <li><a href="solocarrera.html">Solo Carrera</a></li>
+                            <li><a href="acceso.html">Acceso</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="sorteo.html" class="menu-link">Sorteo Tres primeros pilotos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contacto.html" class="menu-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="container-fluid">
+            <main class="main-contenido">
+                <section class="hero-section">
+                    <img src="imagenes/granpremio.jpg" alt="Gran Premio de Euskadi" class="hero-imagen">
+                    <div class="hero-overlay">
+                        <h1>Gran Premio de Euskadi F1</h1>
+                        <p class="hero-subtitulo">Bilbao 2024</p>
+                    </div>
+                </section>
+
+                <section class="carrera-info">
+                    <div class="info-grid">
+                        <div class="info-text">
+                            <h2>Bienvenidos al Gran Premio de Euskadi</h2>
+                            <p>
+                                Bilbao se prepara para recibir el evento deportivo más emocionante del año. 
+                                El Gran Premio de Euskadi de Fórmula 1 traerá a las calles de nuestra ciudad 
+                                la velocidad, la tecnología y la pasión de la competición automovilística más 
+                                prestigiosa del mundo.
+                            </p>
+                            <p>
+                                Un circuito urbano único que combina las rectas más rápidas con curvas técnicas 
+                                que pondrán a prueba a los mejores pilotos del planeta. Desde el Guggenheim hasta 
+                                la ría, cada rincón de Bilbao vibrará con el rugido de los motores.
+                            </p>
+                        </div>
+                        <div class="info-imagen">
+                            <img src="imagenes/Circuito_urbano_de_Bilbao.svg" alt="Circuito Bilbao">
+                        </div>
+                    </div>
+                </section>
+                <section class="mrrobot-section">
+                    <div class="mrrobot-contenido">
+                        <h3>🤝 Colaboración con MR-ROBOT</h3>
+                        <p>
+                            Estamos orgullosos de colaborar con el grupo <strong>MR-ROBOT</strong> en su 
+                            iniciativa para promover un futuro más sostenible en el automovilismo. Juntos 
+                            trabajamos por la eliminación progresiva de los motores de combustión tradicionales 
+                            y su sustitución por <strong>motores híbridos y tecnologías limpias</strong>.
+                        </p>
+                        <p class="mrrobot-slogan">
+                            "El futuro de la velocidad es verde" - MR-ROBOT
+                        </p>
+                    </div>
+                </section>
+                <section class="sponsors-section">
+                    <h2>Nuestros Patrocinadores</h2>
+                    <div class="sponsors-grid">
+                        <div class="sponsor-card">
+                            <img src="imagenes/iberdrola-logo.png" alt="Patrocinador 1">
+                        </div>
+                        <div class="sponsor-card">
+                            <img src="imagenes/Bankinter.svg.png" alt="Patrocinador 2">
+                        </div>
+                        <div class="sponsor-card">
+                            <img src="imagenes/logo-linea-directa.jpg.png" alt="Patrocinador 3">
+                        </div>
+                        <div class="sponsor-card">
+                            <img src="imagenes/sanluis-logo.png" alt="Patrocinador 4">
+                        </div>
+                    </div>
+                </section>
+                <section class="f1-coche-section">
+                    <img src="imagenes/cocheF1.jpg" alt="Coche F1" class="f1-coche-imagen">
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <div class="carousel-container">
+                    <h3>Galería</h3>
+                    <div class="carousel">
+                        <img src="imagenes/laemociondef1.jpg" alt="Imagen 1" class="carousel-imagen active" data-index="0">
+                        <img src="imagenes/CircuitoUrbanodeBilbao-2.jpg" alt="Imagen 2" class="carousel-imagen" data-index="1">
+                        <img src="imagenes/Velocidadmáximaenlasrectas.jpg" alt="Imagen 3" class="carousel-imagen" data-index="2">
+                        <img src="imagenes/el-edificio-guggenheim-bilbao.jpg" alt="Imagen 4" class="carousel-imagen" data-index="3">
+                        <img src="imagenes/Curvastécnicasdelcircuito.jpg" alt="Imagen 5" class="carousel-imagen" data-index="4">
+                        <img src="imagenes/riabilbaoilu.jpg" alt="Imagen 6" class="carousel-imagen" data-index="5">
+                        <img src="imagenes/boxes.jpg" alt="Imagen 7" class="carousel-imagen" data-index="6">
+                        <img src="imagenes/podio.jpg" alt="Imagen 8" class="carousel-imagen" data-index="7">
+                        <img src="imagenes/aficion.jpg" alt="Imagen 9" class="carousel-imagen" data-index="8">
+                        <img src="imagenes/puppy.jpg" alt="Imagen 10" class="carousel-imagen" data-index="9">
+                    </div>
+                    <p class="carousel-titulo" id="carousel-titulo">La emoción de la F1</p>
+                </div>
+                <div class="links-section">
+                    <h3>Enlaces de Interés</h3>
+                    <ul class="interes-links">
+                        <li><a href="https://www.formula1.com" target="_blank">Sitio Oficial F1</a></li>
+                        <li><a href="https://www.bilbao.eus" target="_blank">Turismo Bilbao</a></li>
+                        <li><a href="#">Calendario Completo</a></li>
+                        <li><a href="#">Mapa del Circuito</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="descargar-section">
+                    <h3>Documentación</h3>
+                    <div class="descargar-item">
+                        <a href="normativa-f1.pdf" download class="descargar-link">
+                            📄 Descargar Normativa F1
+                        </a>
+                        <p class="hash-code">HASH: a3f5b9c2e8d1f4a7</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contenido">
+                <div class="footer-section">
+                    <p class="trademark">© 2025 Formula 1® | Ayuntamiento de Bilbao®</p>
+                </div>
+                <div class="footer-section">
+                    <a href="#">Política de Cookies</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                <div class="footer-section social-media">
+                    <a href="https://facebook.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Facebook_Logo_(2019).png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icono">
+                        <img src="imagenes/X_logo_2023.svg.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Instagram_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Youtube_logo.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

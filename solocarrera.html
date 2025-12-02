@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Premio de Euskadi F1 - Bilbao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/LOGO-F1-GRUPO3.png" alt="Logo F1 Bilbao" class="logo" id="logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">La carrera</a>
+                        <ul class="submenu">
+                            <li><a href="#">Circuito</a></li>
+                            <li><a href="#">Escuderías</a></li>
+                            <li><a href="#">Horarios</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Bilbao</a>
+                        <ul class="submenu">
+                            <li><a href="#">Visitanos</a></li>
+                            <li><a href="#">Gastronomía</a></li>
+                            <li><a href="#">Alojamiento</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Entradas</a>
+                        <ul class="submenu">
+                            <li><a href="#">Fin semana</a></li>
+                            <li><a href="solocarrera.html">Solo Carrera</a></li>
+                            <li><a href="acceso.html">Acceso</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="sorteo.html" class="menu-link">Sorteo Tres primeros pilotos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contacto.html" class="menu-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="container">
+            <main class="main-contenido full-width">
+                <section class="entrada-section">
+                    <h1 class="page-titulo">Comprar Entrada - Solo Carrera</h1>
+                    
+                    <div class="entrada-form-container">
+                        <form id="formEntrada" class="entrada-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="dni">DNI *</label>
+                                    <input type="text" id="dni" name="dni" placeholder="12345678A" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="nombre">Nombre *</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="apellidos">Apellidos *</label>
+                                    <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="tipoEntrada">Tipo de Entrada *</label>
+                                    <select id="tipoEntrada" name="tipoEntrada" required>
+                                        <option value="">Selecciona tipo</option>
+                                        <option value="adulto">Adulto</option>
+                                        <option value="infantil">Infantil</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="zona">Zona *</label>
+                                    <select id="zona" name="zona" required>
+                                        <option value="">Selecciona zona</option>
+                                        <option value="zona1">Zona 1</option>
+                                        <option value="zona2">Zona 2</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="edad">Edad *</label>
+                                    <input type="number" id="edad" name="edad" placeholder="Tu edad" min="1" max="120" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="precio">Precio (€)</label>
+                                    <input type="text" id="precio" name="precio" placeholder="0.00" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="button" class="btn-calcular" onclick="calcularPrecio()">Calcular Precio</button>
+                            </div>
+
+                            <div class="condiciones-container">
+                                <h3>Condiciones de Compra</h3>
+                                <div class="condiciones-scroll">
+                                    <h4>Artículo 1: Objeto del Contrato</h4>
+                                    <p>El presente contrato tiene por objeto la compra-venta de entradas para el Gran Premio de Euskadi de Fórmula 1.</p>
+                                    
+                                    <h4>Artículo 2: Precio</h4>
+                                    <p>El precio de la entrada será el indicado en el momento de la compra y dependerá del tipo de entrada y zona seleccionada.</p>
+                                    
+                                    <h4>Artículo 3: Forma de Pago</h4>
+                                    <p>El pago se realizará mediante tarjeta de crédito o débito en el momento de la compra.</p>
+                                    
+                                    <h4>Artículo 4: Cancelaciones y Devoluciones</h4>
+                                    <p>Las entradas no son reembolsables excepto en caso de cancelación del evento.</p>
+                                    
+                                    <h4>Artículo 5: Uso de la Entrada</h4>
+                                    <p>La entrada es personal e intransferible. El portador debe presentar un documento de identidad válido.</p>
+                                    
+                                    <h4>Artículo 6: Responsabilidad</h4>
+                                    <p>El organizador no se hace responsable de pérdidas o daños personales durante el evento.</p>
+                                    
+                                    <h4>Artículo 7: Protección de Datos</h4>
+                                    <p>Los datos personales serán tratados conforme a la normativa vigente de protección de datos.</p>
+                                </div>
+                                
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="aceptoCondiciones" name="aceptoCondiciones">
+                                    <label for="aceptoCondiciones">Acepto las condiciones del contrato</label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn-comprar" id="btnComprar" onclick="comprarEntrada()" disabled>
+                                    Comprar Entrada
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contenido">
+                <div class="footer-section">
+                    <p class="trademark">© 2025 Formula 1® | Ayuntamiento de Bilbao®</p>
+                </div>
+                <div class="footer-section">
+                    <a href="#">Política de Cookies</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                <div class="footer-section social-media">
+                    <a href="https://facebook.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Facebook_Logo_(2019).png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icono">
+                        <img src="imagenes/X_logo_2023.svg.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Instagram_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Youtube_logo.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="entrada.js"></script>
+</body>
+</html>

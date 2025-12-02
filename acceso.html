@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Premio de Euskadi F1 - Bilbao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="imagenes/LOGO-F1-GRUPO3.png" alt="Logo F1 Bilbao" class="logo" id="logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">La carrera</a>
+                        <ul class="submenu">
+                            <li><a href="#">Circuito</a></li>
+                            <li><a href="#">Escuderías</a></li>
+                            <li><a href="#">Horarios</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Bilbao</a>
+                        <ul class="submenu">
+                            <li><a href="#">Visitanos</a></li>
+                            <li><a href="#">Gastronomía</a></li>
+                            <li><a href="#">Alojamiento</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Entradas</a>
+                        <ul class="submenu">
+                            <li><a href="#">Fin semana</a></li>
+                            <li><a href="solocarrera.html">Solo Carrera</a></li>
+                            <li><a href="acceso.html">Acceso</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="sorteo.html" class="menu-link">Sorteo Tres primeros pilotos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contacto.html" class="menu-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <div class="container">
+            <main class="main-contenido full-width">
+                <section class="acceso-section">
+                    <h1 class="page-titulo">Acceso a Entradas Compradas</h1>
+                    
+                    <div class="acceso-form-container">
+                        <div class="acceso-info">
+                            <p>Introduce tus credenciales para consultar tus entradas compradas.</p>
+                        </div>
+
+                        <form id="formAcceso" class="acceso-form">
+                            <div class="form-group">
+                                <label for="usuario">Usuario *</label>
+                                <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contrasena">Contraseña *</label>
+                                <div class="password-container">
+                                    <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu contraseña" required>
+                                    <button type="button" class="toggle-password" onclick="togglePassword()">
+                                        👁️
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn-acceso" onclick="consultarEntradas()">
+                                    Consultar Entradas
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contenido">
+                <div class="footer-section">
+                    <p class="trademark">© 2025 Formula 1® | Ayuntamiento de Bilbao®</p>
+                </div>
+                <div class="footer-section">
+                    <a href="#">Política de Cookies</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                <div class="footer-section social-media">
+                    <a href="https://facebook.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Facebook_Logo_(2019).png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icono">
+                        <img src="imagenes/X_logo_2023.svg.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Instagram_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-icono">
+                        <img src="imagenes/Youtube_logo.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="acceso.js"></script>
+</body>
+</html>
